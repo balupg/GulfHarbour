@@ -222,9 +222,9 @@ var saturn = {
     },
     disc: {
         createDisc: function (parentPlanet) {
-            var torus = BABYLON.Mesh.CreateTorus("torus", 10.8, 6, 64, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+            var torus = BABYLON.Mesh.CreateTorus("torus", 18, 6, 64, scene, false, BABYLON.Mesh.DEFAULTSIDE);
             var discMaterial = new BABYLON.StandardMaterial('discMaterial', scene);
-            discMaterial.diffuseTexture = new BABYLON.Texture('images/saturnmap.jpg', scene);
+            discMaterial.diffuseTexture = new BABYLON.Texture('images/rings.jpg', scene);
             discMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
             torus.position.z = 0;
             torus.scaling.y = 0.1;
